@@ -1,0 +1,45 @@
+/*--Nav---*/
+
+
+
+
+/*Navegation*/
+#page-nav {
+    width: 100%;
+}
+
+#page-nav img {
+    margin: 3px;
+}
+
+#page-nav ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.nav li {
+    float: left;
+}
+
+.nav li:hover {
+    position: relative;
+}
+
+/*.sub-nav {
+    display: none;
+}*/
+
+#page-nav ul li/*:hover */ul {
+    position: absolute;
+    display: none;
+}
+
+#page-menu ul li a {
+    display: inline-block;
+}
+
+#page-nav ul li:hover ul {
+    display: block;
+}
+
