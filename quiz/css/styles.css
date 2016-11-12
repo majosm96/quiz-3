@@ -1,45 +1,65 @@
 /*--Nav---*/
 
+* {
+    margin: 0;
+    padding: 0;
+}
 
-
-
-/*Navegation*/
-#page-nav {
+.nav {
+    display: table;
     width: 100%;
-}
-
-#page-nav img {
-    margin: 3px;
-}
-
-#page-nav ul {
-    list-style: none;
-    margin: 0 auto;
-    padding: 0 auto;
-}
-
-.nav li {
-    float: left;
-}
-
-.nav li:hover {
+    max-width: 1400px;
+    margin: 0;
+    border-collapse: collapse;
     position: relative;
 }
 
-/*.sub-nav {
-    display: none;
-}*/
-
-#page-nav ul li/*:hover */ul {
-    position: absolute;
-    display: none;
+.sub-nav {
+    display: table;
 }
 
-#page-menu ul li a {
-    display: inline-block;
-}
-
-#page-nav ul li:hover ul {
+.nav  a {
     display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
 }
+
+.nav-li {
+    background-color: #404048;
+    display: table-cell;
+    list-style: none;
+    text-decoration: none;
+    box-sizing:border-box;
+    padding: 10px;
+    border-left: 1px solid #fff;
+}
+
+.nav-li:first-child {
+    border-left: none
+}
+
+
+.nav li:hover{
+    background-color: #FF393E;
+}
+
+.nav-li ul {
+    position: absolute;
+    visibility: hidden;
+}
+
+.sub-nav-li {
+    box-sizing: border-box;
+    display: table-cell;
+    padding: 30px;
+}
+
+.nav li:hover ul{
+    visibility:visible;
+    background-color: transparent;
+}
+
+/*---End Nav---*/
 
